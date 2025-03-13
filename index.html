@@ -1,0 +1,2676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="author" content="unicoder" />
+    <title>Real Estate</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Required style of the theme -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/webfonts/flaticon/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/layerslider.css" />
+    <link rel="stylesheet" href="assets/css/template.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/colors/color.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+  </head>
+
+  <body>
+    <div class="preloader">
+      <div class="loader xy-center"></div>
+    </div>
+
+    <div id="page_wrapper">
+      <!--============== Header Section Start ==============-->
+      <header class="transparent-header nav-on-banner fixed-bg-dark">
+        <div class="main-nav py-2 xs-p-0">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <nav
+                  class="navbar navbar-expand-lg nav-white nav-primary-hover nav-line-active"
+                >
+                  <a class="navbar-brand" href="#"
+                    ><img
+                      class="nav-logo"
+                      src="assets/images/logo/logo-white.png"
+                      alt="Image not found !"
+                      style="width: 50px"
+                  /></a>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span
+                      class="navbar-toggler-icon flaticon-menu flat-small text-primary"
+                    ></span>
+                  </button>
+                  <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="properties.html"
+                          >Properties</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                      </li>
+                    </ul>
+                    <a
+                      href="login.html"
+                      class="btn btn-white add-listing-btn mx-1"
+                      ><i class="fa fa-sign-in"></i> Sign In</a
+                    >
+                    <a
+                      href="submit-property.html"
+                      class="btn btn-white add-listing-btn"
+                      >+ Submit Property</a
+                    >
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--============== Header Section End ==============-->
+
+      <!--============== Search Banner Start ==============-->
+      <div
+        class="full-row p-0"
+        style="
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url('assets/images/slider/1.jpg');
+          background-position: center center;
+          background-size: cover;
+          height: 100vh;
+        "
+      >
+        <div class="container">
+          <div class="row justify-content-md-center py-8">
+            <div class="col-md-10">
+              <div
+                class="banner-search sm-p-0"
+                style="padding-top: 170px; padding-bottom: 190px"
+              >
+                <h2 class="text-center mx-auto text-white">
+                  Search what you are looking for...
+                </h2>
+                <span class="d-table mx-auto text-white font-medium mb-4"
+                  >We have listed over 100000+ property in our database</span
+                >
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="Rent-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#Rent"
+                      type="button"
+                      role="tab"
+                      aria-controls="Rent"
+                      aria-selected="true"
+                    >
+                      Rent
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="Sale-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#Sale"
+                      type="button"
+                      role="tab"
+                      aria-controls="Sale"
+                      aria-selected="false"
+                    >
+                      Sale
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="Rent"
+                    role="tabpanel"
+                    aria-labelledby="Rent-tab"
+                  >
+                    <form
+                      class="bg-white shadow-sm quick-search form-icon-right position-relative"
+                      action="#"
+                      method="post"
+                    >
+                      <div
+                        class="row row-cols-lg-4 row-cols-md-3 row-cols-1 g-3"
+                      >
+                        <div class="col">
+                          <select class="form-control">
+                            <option>Property Types</option>
+                            <option>House</option>
+                            <option>Office</option>
+                            <option>Appartment</option>
+                            <option>Condos</option>
+                            <option>Villa</option>
+                            <option>Small Family</option>
+                            <option>Single Room</option>
+                          </select>
+                        </div>
+                        <div class="col">
+                          <div class="position-relative">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="location"
+                              placeholder="Location"
+                            />
+                            <i
+                              class="flaticon-placeholder flat-mini icon-font y-center text-dark"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="position-relative">
+                            <button
+                              class="form-control price-toggle toggle-btn"
+                              data-target="#data-range-price"
+                            >
+                              Price
+                              <i
+                                class="fas fa-angle-down font-mini icon-font y-center text-dark"
+                              ></i>
+                            </button>
+                            <div
+                              id="data-range-price"
+                              class="price_range price-range-toggle"
+                            >
+                              <div class="area-filter price-filter">
+                                <span class="price-slider">
+                                  <input
+                                    class="filter_price"
+                                    type="text"
+                                    name="price"
+                                    value="0;1000000"
+                                    style="display: none"
+                                  />
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="position-relative">
+                            <button
+                              class="form-control text-start toggle-btn"
+                              data-target="#aditional-check"
+                            >
+                              Advanced
+                              <i
+                                class="fas fa-ellipsis-v font-mini icon-font y-center text-dark"
+                              ></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <button class="btn btn-primary w-100">Search</button>
+                        </div>
+                        <!-- Advance Features -->
+                        <div
+                          id="aditional-check"
+                          class="aditional-features p-5"
+                        >
+                          <h5 class="mb-3">Aditional Options</h5>
+                          <ul
+                            class="row row-cols-lg-4 row-cols-md-2 row-cols-1 custom-check-box mb-4"
+                          >
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck1"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck1"
+                                >Air Conditioning</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck2"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck2"
+                                >Garage Facility</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck3"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck3"
+                                >Swiming Pool</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck4"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck4"
+                                >Fire Security</label
+                              >
+                            </li>
+
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck5"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck5"
+                                >Fire Place Facility</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck6"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck6"
+                                >Play Ground</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck7"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck7"
+                                >Ferniture Include</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck8"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck8"
+                                >Marbel Floor</label
+                              >
+                            </li>
+
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck9"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck9"
+                                >Store Room</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck10"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck10"
+                                >Hight Class Door</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck11"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck11"
+                                >Floor Heating System</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck12"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck12"
+                                >Garden Include</label
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="Sale"
+                    role="tabpanel"
+                    aria-labelledby="Sale-tab"
+                  >
+                    <form
+                      class="bg-white shadow-sm quick-search form-icon-right position-relative"
+                      action="#"
+                      method="post"
+                    >
+                      <div
+                        class="row row-cols-lg-4 row-cols-md-3 row-cols-1 g-3"
+                      >
+                        <div class="col">
+                          <select class="form-control">
+                            <option>Property Types</option>
+                            <option>House</option>
+                            <option>Office</option>
+                            <option>Appartment</option>
+                            <option>Condos</option>
+                            <option>Villa</option>
+                            <option>Small Family</option>
+                            <option>Single Room</option>
+                          </select>
+                        </div>
+                        <div class="col">
+                          <div class="position-relative">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="location"
+                              placeholder="Location"
+                            />
+                            <i
+                              class="flaticon-placeholder flat-mini icon-font y-center text-dark"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="position-relative">
+                            <button
+                              class="form-control price-toggle toggle-btn"
+                              data-target="#data-range-price"
+                            >
+                              Price
+                              <i
+                                class="fas fa-angle-down font-mini icon-font y-center text-dark"
+                              ></i>
+                            </button>
+                            <div
+                              id="data-range-price"
+                              class="price_range price-range-toggle"
+                            >
+                              <div class="area-filter price-filter">
+                                <span class="price-slider">
+                                  <input
+                                    class="filter_price"
+                                    type="text"
+                                    name="price"
+                                    value="0;1000000"
+                                    style="display: none"
+                                  />
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="position-relative">
+                            <button
+                              class="form-control text-start toggle-btn"
+                              data-target="#aditional-check"
+                            >
+                              Advanced
+                              <i
+                                class="fas fa-ellipsis-v font-mini icon-font y-center text-dark"
+                              ></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <button class="btn btn-primary w-100">Search</button>
+                        </div>
+                        <!-- Advance Features -->
+                        <div
+                          id="aditional-check"
+                          class="aditional-features p-5"
+                        >
+                          <h5 class="mb-3">Aditional Options</h5>
+                          <ul
+                            class="row row-cols-lg-4 row-cols-md-2 row-cols-1 custom-check-box mb-4"
+                          >
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck1"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck1"
+                                >Air Conditioning</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck2"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck2"
+                                >Garage Facility</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck3"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck3"
+                                >Swiming Pool</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck4"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck4"
+                                >Fire Security</label
+                              >
+                            </li>
+
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck5"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck5"
+                                >Fire Place Facility</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck6"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck6"
+                                >Play Ground</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck7"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck7"
+                                >Ferniture Include</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck8"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck8"
+                                >Marbel Floor</label
+                              >
+                            </li>
+
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck9"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck9"
+                                >Store Room</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck10"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck10"
+                                >Hight Class Door</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck11"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck11"
+                                >Floor Heating System</label
+                              >
+                            </li>
+                            <li class="col">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input hide"
+                                id="customCheck12"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="customCheck12"
+                                >Garden Include</label
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--============== Search Banner End ==============-->
+
+      <!--============== Property Category Start ==============-->
+      <div class="full-row bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col mb-5">
+              <h2 class="down-line w-50 mx-auto mb-4 text-center w-sm-100">
+                What You Area Looking For?
+              </h2>
+            </div>
+          </div>
+          <div
+            class="row row-cols-lg-5 row-cols-sm-4 row-cols-1 g-3 justify-content-center"
+          >
+            <div class="col">
+              <a
+                href="properties.html"
+                class="text-center d-flex flex-column align-items-center hover-text-white p-4 bg-white transation text-general hover-bg-primary h-100"
+              >
+                <div class="box-70px position-relative">
+                  <i
+                    class="flaticon-online-booking flat-medium d-inline-block text-primary position-absolute xy-center"
+                  ></i>
+                </div>
+                <h6 class="d-block text-secondary">Office Floor</h6>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                href="properties.html"
+                class="text-center d-flex flex-column align-items-center hover-text-white p-4 bg-white transation text-general hover-bg-primary h-100"
+              >
+                <div class="box-70px position-relative">
+                  <i
+                    class="flaticon-shop flat-medium d-inline-block text-primary position-absolute xy-center"
+                  ></i>
+                </div>
+                <h6 class="d-block text-secondary">Commercial</h6>
+              </a>
+            </div>
+
+            <div class="col">
+              <a
+                href="properties.html"
+                class="text-center d-flex flex-column align-items-center hover-text-white p-4 bg-white transation text-general hover-bg-primary h-100"
+              >
+                <div class="box-70px position-relative">
+                  <i
+                    class="flaticon-online-booking flat-medium d-inline-block text-primary position-absolute xy-center"
+                  ></i>
+                </div>
+                <h6 class="d-block text-secondary">Appartment</h6>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                href="properties.html"
+                class="text-center d-flex flex-column align-items-center hover-text-white p-4 bg-white transation text-general hover-bg-primary h-100"
+              >
+                <div class="box-70px position-relative">
+                  <i
+                    class="flaticon-sketch flat-medium d-inline-block text-primary position-absolute xy-center"
+                  ></i>
+                </div>
+                <h6 class="d-block text-secondary">Condo</h6>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                href="properties.html"
+                class="text-center d-flex flex-column align-items-center hover-text-white p-4 bg-white transation text-general hover-bg-primary h-100"
+              >
+                <div class="box-70px position-relative">
+                  <i
+                    class="flaticon-spa flat-medium d-inline-block text-primary position-absolute xy-center"
+                  ></i>
+                </div>
+                <h6 class="d-block text-secondary">Villa House</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--============== Property Category End ==============-->
+
+      <!--============== Recent Property Start ==============-->
+      <div class="full-row">
+        <div class="container">
+          <div class="row">
+            <div class="col mb-4">
+              <div class="align-items-center d-flex">
+                <div class="me-auto">
+                  <h2 class="d-table">Recent Properties</h2>
+                </div>
+                <a
+                  href="properties.html"
+                  class="btn-link text-secondary hover-text-primary transation ms-auto"
+                  >More Properties &nbsp;<i
+                    class="fa fa-angle-right"
+                    style="font-size: 10px"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-md-3 row-cols-1 g-4">
+            <div class="col">
+              <!-- Property Grid -->
+              <div
+                class="property-grid-1 property-block bg-light transation-this"
+              >
+                <div
+                  class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                >
+                  <div class="cata position-absolute">
+                    <span class="sale bg-secondary text-white">For Sale</span>
+                  </div>
+                  <a href="property-details.html"
+                    ><img
+                      src="assets/images/property_grid/property-grid-1.png"
+                      alt="Image Not Found!"
+                  /></a>
+                  <a href="#" class="listing-ctg text-white"
+                    ><i class="fa-solid fa-building"></i
+                    ><span>Apartment</span></a
+                  >
+                  <ul class="position-absolute quick-meta">
+                    <li>
+                      <a href="#" title="Add Compare"
+                        ><i class="fa fa-camera mx-1"></i
+                        ><span style="font-size: 10px; font-weight: bold"
+                          >4</span
+                        ></a
+                      >
+                    </li>
+
+                    <li class="md-mx-none">
+                      <a
+                        class="quick-view"
+                        href="#quick-view"
+                        title="Quick View"
+                        ><i
+                          class="flaticon-zoom-increasing-symbol flat-mini"
+                        ></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="property_text p-4">
+                  <span class="listing-price">$1850<small> </small></span>
+                  <h5 class="listing-title">
+                    <a href="property-details.html">Family House Residense</a>
+                  </h5>
+                  <span class="listing-location"
+                    ><i class="fas fa-map-marker-alt"></i> 4213 South
+                    Burlington, VT 05403</span
+                  >
+                  <ul class="d-flex quantity font-fifteen">
+                    <li title="Beds">
+                      <span><i class="fa-solid fa-bed"></i></span>7
+                    </li>
+                    <li title="Baths">
+                      <span><i class="fa-solid fa-shower"></i></span>5
+                    </li>
+                    <li title="Area">
+                      <span><i class="fa-solid fa-vector-square"></i></span>1200
+                      Sqft
+                    </li>
+                    <li title="Gas">
+                      <span><i class="fa-solid fa-fire"></i></span>Yes
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top"
+                >
+                  <div class="agent">
+                    <a href="#" class="d-flex text-general align-items-center"
+                      ><img
+                        class="rounded-circle me-2"
+                        src="assets/images/team/1.jpg"
+                        alt="avata"
+                      /><span>Ali Tufan</span></a
+                    >
+                  </div>
+                  <div class="post-date ms-auto"><span>2 Month Ago</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <!-- Property Grid -->
+              <div
+                class="property-grid-1 property-block bg-light transation-this"
+              >
+                <div
+                  class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                >
+                  <div class="cata position-absolute">
+                    <span class="sale bg-secondary text-white">For Sale</span>
+                    <span class="featured bg-primary text-white">Featured</span>
+                  </div>
+                  <a href="property-details.html"
+                    ><img
+                      src="assets/images/property_grid/property-grid-2.png"
+                      alt="Image Not Found!"
+                  /></a>
+                  <a href="#" class="listing-ctg text-white"
+                    ><i class="fa-solid fa-building"></i><span>Condo</span></a
+                  >
+                  <ul class="position-absolute quick-meta">
+                    <li>
+                      <a href="#" title="Add Compare"
+                        ><i class="fa fa-camera mx-1"></i
+                        ><span style="font-size: 10px; font-weight: bold"
+                          >4</span
+                        ></a
+                      >
+                    </li>
+
+                    <li class="md-mx-none">
+                      <a
+                        class="quick-view"
+                        href="#quick-view"
+                        title="Quick View"
+                        ><i
+                          class="flaticon-zoom-increasing-symbol flat-mini"
+                        ></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="property_text p-4">
+                  <span class="listing-price">$120,5500<small> </small></span>
+                  <h5>
+                    <a class="text-secondary" href="property-details.html"
+                      >Luxury Condos Riverside</a
+                    >
+                  </h5>
+                  <span class="listing-location"
+                    ><i class="fas fa-map-marker-alt"></i> 2305 Frog Lane
+                    Overlandpk, MO 66210</span
+                  >
+                  <ul class="d-flex quantity font-fifteen">
+                    <li title="Beds">
+                      <span><i class="fa-solid fa-bed"></i></span>7
+                    </li>
+                    <li title="Baths">
+                      <span><i class="fa-solid fa-shower"></i></span>5
+                    </li>
+                    <li title="Area">
+                      <span><i class="fa-solid fa-vector-square"></i></span>1200
+                      Sqft
+                    </li>
+                    <li title="Gas">
+                      <span><i class="fa-solid fa-fire"></i></span>Yes
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top"
+                >
+                  <div class="agent">
+                    <a href="#" class="d-flex text-general align-items-center"
+                      ><img
+                        class="rounded-circle me-2"
+                        src="assets/images/team/1.jpg"
+                        alt="avata"
+                      /><span>Ali Tufan</span></a
+                    >
+                  </div>
+                  <div class="post-date ms-auto"><span>2 Month Ago</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <!-- Property Grid -->
+              <div
+                class="property-grid-1 property-block bg-light transation-this"
+              >
+                <div
+                  class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                >
+                  <div class="cata position-absolute">
+                    <span class="sale bg-secondary text-white">For Rent</span>
+                  </div>
+                  <a href="property-details.html"
+                    ><img
+                      src="assets/images/property_grid/property-grid-3.png"
+                      alt="Image Not Found!"
+                  /></a>
+                  <a href="#" class="listing-ctg text-white"
+                    ><i class="fa-solid fa-building"></i><span>Villa</span></a
+                  >
+                  <ul class="position-absolute quick-meta">
+                    <li>
+                      <a href="#" title="Add Compare"
+                        ><i class="fa fa-camera mx-1"></i
+                        ><span style="font-size: 10px; font-weight: bold"
+                          >4</span
+                        ></a
+                      >
+                    </li>
+
+                    <li class="md-mx-none">
+                      <a
+                        class="quick-view"
+                        href="#quick-view"
+                        title="Quick View"
+                        ><i
+                          class="flaticon-zoom-increasing-symbol flat-mini"
+                        ></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="property_text p-4">
+                  <span class="listing-price">$3450<small> </small></span>
+                  <h5>
+                    <a class="text-secondary" href="property-details.html"
+                      >Gorgeous Villa Bay View</a
+                    >
+                  </h5>
+                  <span class="listing-location"
+                    ><i class="fas fa-map-marker-alt"></i> 2305 Frog Lane
+                    Overlandpk, MO 66210</span
+                  >
+                  <ul class="d-flex quantity font-fifteen">
+                    <li title="Beds">
+                      <span><i class="fa-solid fa-bed"></i></span>7
+                    </li>
+                    <li title="Baths">
+                      <span><i class="fa-solid fa-shower"></i></span>5
+                    </li>
+                    <li title="Area">
+                      <span><i class="fa-solid fa-vector-square"></i></span>1200
+                      Sqft
+                    </li>
+                    <li title="Gas">
+                      <span><i class="fa-solid fa-fire"></i></span>Yes
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top"
+                >
+                  <div class="agent">
+                    <a href="#" class="d-flex text-general align-items-center"
+                      ><img
+                        class="rounded-circle me-2"
+                        src="assets/images/team/1.jpg"
+                        alt="avata"
+                      /><span>Ali Tufan</span></a
+                    >
+                  </div>
+                  <div class="post-date ms-auto"><span>2 Month Ago</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <!-- Property Grid -->
+              <div
+                class="property-grid-1 property-block bg-light transation-this"
+              >
+                <div
+                  class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                >
+                  <div class="cata position-absolute">
+                    <span class="sale bg-secondary text-white">For Rent</span>
+                  </div>
+                  <a href="property-details.html"
+                    ><img
+                      src="assets/images/property_grid/property-grid-4.png"
+                      alt="Image Not Found!"
+                  /></a>
+                  <a href="#" class="listing-ctg text-white"
+                    ><i class="fa-solid fa-building"></i><span>Condo</span></a
+                  >
+                  <ul class="position-absolute quick-meta">
+                    <li>
+                      <a href="#" title="Add Compare"
+                        ><i class="fa fa-camera mx-1"></i
+                        ><span style="font-size: 10px; font-weight: bold"
+                          >4</span
+                        ></a
+                      >
+                    </li>
+
+                    <li class="md-mx-none">
+                      <a
+                        class="quick-view"
+                        href="#quick-view"
+                        title="Quick View"
+                        ><i
+                          class="flaticon-zoom-increasing-symbol flat-mini"
+                        ></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="property_text p-4">
+                  <span class="listing-price">$1,0450<small> </small></span>
+                  <h5>
+                    <a class="text-secondary" href="property-details.html"
+                      >New Developed Condos</a
+                    >
+                  </h5>
+                  <span class="listing-location"
+                    ><i class="fas fa-map-marker-alt"></i> 2305 Frog Lane
+                    Overlandpk, MO 66210</span
+                  >
+                  <ul class="d-flex quantity font-fifteen">
+                    <li title="Beds">
+                      <span><i class="fa-solid fa-bed"></i></span>7
+                    </li>
+                    <li title="Baths">
+                      <span><i class="fa-solid fa-shower"></i></span>5
+                    </li>
+                    <li title="Area">
+                      <span><i class="fa-solid fa-vector-square"></i></span>1200
+                      Sqft
+                    </li>
+                    <li title="Gas">
+                      <span><i class="fa-solid fa-fire"></i></span>Yes
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top"
+                >
+                  <div class="agent">
+                    <a href="#" class="d-flex text-general align-items-center"
+                      ><img
+                        class="rounded-circle me-2"
+                        src="assets/images/team/1.jpg"
+                        alt="avata"
+                      /><span>Ali Tufan</span></a
+                    >
+                  </div>
+                  <div class="post-date ms-auto"><span>2 Month Ago</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <!-- Property Grid -->
+              <div
+                class="property-grid-1 property-block bg-light transation-this"
+              >
+                <div
+                  class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                >
+                  <div class="cata position-absolute">
+                    <span class="sale bg-secondary text-white">For Sale</span>
+                  </div>
+                  <a href="property-details.html"
+                    ><img
+                      src="assets/images/property_grid/property-grid-1.png"
+                      alt="Image Not Found!"
+                  /></a>
+                  <a href="#" class="listing-ctg text-white"
+                    ><i class="fa-solid fa-building"></i
+                    ><span>Apartment</span></a
+                  >
+                  <ul class="position-absolute quick-meta">
+                    <li>
+                      <a href="#" title="Add Compare"
+                        ><i class="fa fa-camera mx-1"></i
+                        ><span style="font-size: 10px; font-weight: bold"
+                          >4</span
+                        ></a
+                      >
+                    </li>
+
+                    <li class="md-mx-none">
+                      <a
+                        class="quick-view"
+                        href="#quick-view"
+                        title="Quick View"
+                        ><i
+                          class="flaticon-zoom-increasing-symbol flat-mini"
+                        ></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="property_text p-4">
+                  <span class="listing-price">$1850<small> </small></span>
+                  <h5>
+                    <a class="text-secondary" href="property-details.html"
+                      >Family House Residense</a
+                    >
+                  </h5>
+                  <span class="listing-location"
+                    ><i class="fas fa-map-marker-alt"></i> 4213 South
+                    Burlington, VT 05403
+                  </span>
+                  <ul class="d-flex quantity font-fifteen">
+                    <li title="Beds">
+                      <span><i class="fa-solid fa-bed"></i></span>7
+                    </li>
+                    <li title="Baths">
+                      <span><i class="fa-solid fa-shower"></i></span>5
+                    </li>
+                    <li title="Area">
+                      <span><i class="fa-solid fa-vector-square"></i></span>1200
+                      Sqft
+                    </li>
+                    <li title="Gas">
+                      <span><i class="fa-solid fa-fire"></i></span>Yes
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top"
+                >
+                  <div class="agent">
+                    <a href="#" class="d-flex text-general align-items-center"
+                      ><img
+                        class="rounded-circle me-2"
+                        src="assets/images/team/1.jpg"
+                        alt="avata"
+                      /><span>Ali Tufan</span></a
+                    >
+                  </div>
+                  <div class="post-date ms-auto"><span>2 Month Ago</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <!-- Property Grid -->
+              <div
+                class="property-grid-1 property-block bg-light transation-this"
+              >
+                <div
+                  class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                >
+                  <div class="cata position-absolute">
+                    <span class="sale bg-secondary text-white">For Sale</span>
+                    <span class="featured bg-primary text-white">Featured</span>
+                  </div>
+                  <a href="property-details.html"
+                    ><img
+                      src="assets/images/property_grid/property-grid-2.png"
+                      alt="Image Not Found!"
+                  /></a>
+                  <a href="#" class="listing-ctg text-white"
+                    ><i class="fa-solid fa-building"></i><span>Condos</span></a
+                  >
+                  <ul class="position-absolute quick-meta">
+                    <li>
+                      <a href="#" title="Add Compare"
+                        ><i class="fa fa-camera mx-1"></i
+                        ><span style="font-size: 10px; font-weight: bold"
+                          >4</span
+                        ></a
+                      >
+                    </li>
+
+                    <li class="md-mx-none">
+                      <a
+                        class="quick-view"
+                        href="#quick-view"
+                        title="Quick View"
+                        ><i
+                          class="flaticon-zoom-increasing-symbol flat-mini"
+                        ></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="property_text p-4">
+                  <span class="listing-price">$100,8850<small> </small></span>
+                  <h5>
+                    <a class="text-secondary" href="property-details.html"
+                      >Luxury Condos</a
+                    >
+                  </h5>
+                  <span class="listing-location"
+                    ><i class="fas fa-map-marker-alt"></i> 2305 Frog Lane
+                    Overlandpk, MO 66210</span
+                  >
+                  <ul class="d-flex quantity font-fifteen">
+                    <li title="Beds">
+                      <span><i class="fa-solid fa-bed"></i></span>7
+                    </li>
+                    <li title="Baths">
+                      <span><i class="fa-solid fa-shower"></i></span>5
+                    </li>
+                    <li title="Area">
+                      <span><i class="fa-solid fa-vector-square"></i></span>1200
+                      Sqft
+                    </li>
+                    <li title="Gas">
+                      <span><i class="fa-solid fa-fire"></i></span>Yes
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="d-flex align-items-center post-meta mt-2 py-3 px-4 border-top"
+                >
+                  <div class="agent">
+                    <a href="#" class="d-flex text-general align-items-center"
+                      ><img
+                        class="rounded-circle me-2"
+                        src="assets/images/team/1.jpg"
+                        alt="avata"
+                      /><span>Ali Tufan</span></a
+                    >
+                  </div>
+                  <div class="post-date ms-auto"><span>2 Month Ago</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--============== Recent Property End ==============-->
+
+      <!--============== Featured Property Start ==============-->
+      <div class="full-row bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col mb-4">
+              <div class="align-items-center d-flex">
+                <div class="me-auto">
+                  <h2 class="d-table">New Hot Deals</h2>
+                </div>
+                <a
+                  href="properties.html"
+                  class="btn-link text-secondary hover-text-primary transation ms-auto"
+                  >More Deals &nbsp;<i
+                    class="fa fa-angle-right"
+                    style="font-size: 10px"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="3block-carusel nav-disable owl-carousel">
+                <div class="item">
+                  <div class="property-grid-2 property-block transation">
+                    <div
+                      class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                    >
+                      <div class="cata position-absolute">
+                        <span class="sale bg-secondary text-white"
+                          >For Sale</span
+                        >
+                      </div>
+                      <a href="property-details.html"
+                        ><img
+                          src="assets/images/property_grid/property-grid-5.png"
+                          alt="Image Not Found!"
+                      /></a>
+                      <ul class="position-absolute quick-meta">
+                        <li>
+                          <a href="#" title="Add Compare"
+                            ><i class="fa fa-camera mx-1"></i
+                            ><span style="font-size: 10px; font-weight: bold"
+                              >4</span
+                            ></a
+                          >
+                        </li>
+
+                        <li class="md-mx-none">
+                          <a
+                            class="quick-view"
+                            href="#quick-view"
+                            title="Quick View"
+                            ><i
+                              class="flaticon-zoom-increasing-symbol flat-mini"
+                            ></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="post-content py-3">
+                      <div
+                        class="post-meta font-small text-uppercase list-color-primary"
+                      >
+                        <a href="#" class="listing-ctg"
+                          ><i class="fa-solid fa-building"></i
+                          ><span>Villa</span></a
+                        >
+                      </div>
+                      <h5>
+                        <a class="text-secondary" href="property-details.html"
+                          >Gorgeous Villa Bay View</a
+                        >
+                      </h5>
+                      <span class="mb-3 d-block font-fifteen"
+                        ><i class="fas fa-map-marker-alt text-primary"></i> 2305
+                        Frog Lane Overlandpk</span
+                      >
+                      <ul class="d-flex quantity font-fifteen">
+                        <li title="Beds">
+                          <span><i class="fa-solid fa-bed"></i></span>7
+                        </li>
+                        <li title="Baths">
+                          <span><i class="fa-solid fa-shower"></i></span>5
+                        </li>
+                        <li title="Area">
+                          <span><i class="fa-solid fa-vector-square"></i></span
+                          >1200 Sqft
+                        </li>
+                        <li title="Gas">
+                          <span><i class="fa-solid fa-fire"></i></span>Yes
+                        </li>
+                      </ul>
+                      <span class="listing-price">$12000<small> </small></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="property-grid-2 property-block transation">
+                    <div
+                      class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                    >
+                      <div class="cata position-absolute">
+                        <span class="sale bg-secondary text-white"
+                          >For Sale</span
+                        >
+                      </div>
+                      <a href="property-details.html"
+                        ><img
+                          src="assets/images/property_grid/property-grid-6.png"
+                          alt="Image Not Found!"
+                      /></a>
+                      <ul class="position-absolute quick-meta">
+                        <li>
+                          <a href="#" title="Add Compare"
+                            ><i class="fa fa-camera mx-1"></i
+                            ><span style="font-size: 10px; font-weight: bold"
+                              >4</span
+                            ></a
+                          >
+                        </li>
+
+                        <li class="md-mx-none">
+                          <a
+                            class="quick-view"
+                            href="#quick-view"
+                            title="Quick View"
+                            ><i
+                              class="flaticon-zoom-increasing-symbol flat-mini"
+                            ></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="post-content py-3">
+                      <div
+                        class="post-meta font-small text-uppercase list-color-primary"
+                      >
+                        <a href="#" class="listing-ctg"
+                          ><i class="fa-solid fa-building"></i
+                          ><span>Appartment</span></a
+                        >
+                      </div>
+                      <h5>
+                        <a class="text-secondary" href="property-details.html"
+                          >Luxury Condos Infront of River</a
+                        >
+                      </h5>
+                      <span class="mb-3 d-block font-fifteen"
+                        ><i class="fas fa-map-marker-alt text-primary"></i> 2305
+                        Frog Lane Overlandpk</span
+                      >
+                      <ul class="d-flex quantity font-fifteen">
+                        <li title="Beds">
+                          <span><i class="fa-solid fa-bed"></i></span>7
+                        </li>
+                        <li title="Baths">
+                          <span><i class="fa-solid fa-shower"></i></span>5
+                        </li>
+                        <li title="Area">
+                          <span><i class="fa-solid fa-vector-square"></i></span
+                          >1200 Sqft
+                        </li>
+                        <li title="Gas">
+                          <span><i class="fa-solid fa-fire"></i></span>Yes
+                        </li>
+                      </ul>
+                      <span class="listing-price"
+                        >$1205500<small> </small
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="property-grid-2 property-block transation">
+                    <div
+                      class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                    >
+                      <div class="cata position-absolute">
+                        <span class="sale bg-secondary text-white"
+                          >For Rent</span
+                        >
+                      </div>
+                      <a href="property-details.html"
+                        ><img
+                          src="assets/images/property_grid/property-grid-7.png"
+                          alt="Image Not Found!"
+                      /></a>
+                      <ul class="position-absolute quick-meta">
+                        <li>
+                          <a href="#" title="Add Compare"
+                            ><i class="fa fa-camera mx-1"></i
+                            ><span style="font-size: 10px; font-weight: bold"
+                              >4</span
+                            ></a
+                          >
+                        </li>
+
+                        <li class="md-mx-none">
+                          <a
+                            class="quick-view"
+                            href="#quick-view"
+                            title="Quick View"
+                            ><i
+                              class="flaticon-zoom-increasing-symbol flat-mini"
+                            ></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="post-content py-3">
+                      <div
+                        class="post-meta font-small text-uppercase list-color-primary"
+                      >
+                        <a href="#" class="listing-ctg"
+                          ><i class="fa-solid fa-building"></i
+                          ><span>Appartment</span></a
+                        >
+                      </div>
+                      <h5>
+                        <a class="text-secondary" href="property-details.html"
+                          >New Developed Condos</a
+                        >
+                      </h5>
+                      <span class="mb-3 d-block font-fifteen"
+                        ><i class="fas fa-map-marker-alt text-primary"></i> 2305
+                        Frog Lane Overlandpk</span
+                      >
+                      <ul class="d-flex quantity font-fifteen">
+                        <li title="Beds">
+                          <span><i class="fa-solid fa-bed"></i></span>7
+                        </li>
+                        <li title="Baths">
+                          <span><i class="fa-solid fa-shower"></i></span>5
+                        </li>
+                        <li title="Area">
+                          <span><i class="fa-solid fa-vector-square"></i></span
+                          >1200 Sqft
+                        </li>
+                        <li title="Gas">
+                          <span><i class="fa-solid fa-fire"></i></span>Yes
+                        </li>
+                      </ul>
+                      <span class="listing-price">$17500<small> </small></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="property-grid-2 property-block transation">
+                    <div
+                      class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                    >
+                      <div class="cata position-absolute">
+                        <span class="sale bg-secondary text-white"
+                          >For Rent</span
+                        >
+                      </div>
+                      <a href="property-details.html"
+                        ><img
+                          src="assets/images/property_grid/property-grid-8.png"
+                          alt="Image Not Found!"
+                      /></a>
+                      <ul class="position-absolute quick-meta">
+                        <li>
+                          <a href="#" title="Add Compare"
+                            ><i class="fa fa-camera mx-1"></i
+                            ><span style="font-size: 10px; font-weight: bold"
+                              >4</span
+                            ></a
+                          >
+                        </li>
+
+                        <li class="md-mx-none">
+                          <a
+                            class="quick-view"
+                            href="#quick-view"
+                            title="Quick View"
+                            ><i
+                              class="flaticon-zoom-increasing-symbol flat-mini"
+                            ></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="post-content py-3">
+                      <div
+                        class="post-meta font-small text-uppercase list-color-primary"
+                      >
+                        <a href="#" class="listing-ctg"
+                          ><i class="fa-solid fa-building"></i
+                          ><span>Condos</span></a
+                        >
+                      </div>
+                      <h5>
+                        <a class="text-secondary" href="property-details.html"
+                          >Luxury Condos Infront of River</a
+                        >
+                      </h5>
+                      <span class="mb-3 d-block font-fifteen"
+                        ><i class="fas fa-map-marker-alt text-primary"></i> 2305
+                        Frog Lane Overlandpk</span
+                      >
+                      <ul class="d-flex quantity font-fifteen">
+                        <li title="Beds">
+                          <span><i class="fa-solid fa-bed"></i></span>7
+                        </li>
+                        <li title="Baths">
+                          <span><i class="fa-solid fa-shower"></i></span>5
+                        </li>
+                        <li title="Area">
+                          <span><i class="fa-solid fa-vector-square"></i></span
+                          >1200 Sqft
+                        </li>
+                        <li title="Gas">
+                          <span><i class="fa-solid fa-fire"></i></span>Yes
+                        </li>
+                      </ul>
+                      <span class="listing-price">$26200<small> </small></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="property-grid-2 property-block transation">
+                    <div
+                      class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                    >
+                      <div class="cata position-absolute">
+                        <span class="sale bg-secondary text-white"
+                          >For Sale</span
+                        >
+                      </div>
+                      <a href="property-details.html"
+                        ><img
+                          src="assets/images/property_grid/property-grid-5.png"
+                          alt="Image Not Found!"
+                      /></a>
+                      <ul class="position-absolute quick-meta">
+                        <li>
+                          <a href="#" title="Add Compare"
+                            ><i class="fa fa-camera mx-1"></i
+                            ><span style="font-size: 10px; font-weight: bold"
+                              >4</span
+                            ></a
+                          >
+                        </li>
+
+                        <li class="md-mx-none">
+                          <a
+                            class="quick-view"
+                            href="#quick-view"
+                            title="Quick View"
+                            ><i
+                              class="flaticon-zoom-increasing-symbol flat-mini"
+                            ></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="post-content py-3">
+                      <div
+                        class="post-meta font-small text-uppercase list-color-primary"
+                      >
+                        <a href="#" class="listing-ctg"
+                          ><i class="fa-solid fa-building"></i
+                          ><span>Villa</span></a
+                        >
+                      </div>
+                      <h5>
+                        <a class="text-secondary" href="property-details.html"
+                          >Gorgeous Villa Bay View</a
+                        >
+                      </h5>
+                      <span class="mb-3 d-block font-fifteen"
+                        ><i class="fas fa-map-marker-alt text-primary"></i> 2305
+                        Frog Lane Overlandpk</span
+                      >
+                      <ul class="d-flex quantity font-fifteen">
+                        <li title="Beds">
+                          <span><i class="fa-solid fa-bed"></i></span>7
+                        </li>
+                        <li title="Baths">
+                          <span><i class="fa-solid fa-shower"></i></span>5
+                        </li>
+                        <li title="Area">
+                          <span><i class="fa-solid fa-vector-square"></i></span
+                          >1200 Sqft
+                        </li>
+                        <li title="Gas">
+                          <span><i class="fa-solid fa-fire"></i></span>Yes
+                        </li>
+                      </ul>
+                      <span class="listing-price">$15200<small> </small></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="property-grid-2 property-block transation">
+                    <div
+                      class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                    >
+                      <div class="cata position-absolute">
+                        <span class="sale bg-secondary text-white"
+                          >For Sale</span
+                        >
+                      </div>
+                      <a href="property-details.html"
+                        ><img
+                          src="assets/images/property_grid/property-grid-6.png"
+                          alt="Image Not Found!"
+                      /></a>
+                      <ul class="position-absolute quick-meta">
+                        <li>
+                          <a href="#" title="Add Compare"
+                            ><i class="fa fa-camera mx-1"></i
+                            ><span style="font-size: 10px; font-weight: bold"
+                              >4</span
+                            ></a
+                          >
+                        </li>
+
+                        <li class="md-mx-none">
+                          <a
+                            class="quick-view"
+                            href="#quick-view"
+                            title="Quick View"
+                            ><i
+                              class="flaticon-zoom-increasing-symbol flat-mini"
+                            ></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="post-content py-3">
+                      <div
+                        class="post-meta font-small text-uppercase list-color-primary"
+                      >
+                        <a href="#" class="listing-ctg"
+                          ><i class="fa-solid fa-building"></i
+                          ><span>Appartment</span></a
+                        >
+                      </div>
+                      <h5>
+                        <a class="text-secondary" href="property-details.html"
+                          >Luxury Condos Infront of River</a
+                        >
+                      </h5>
+                      <span class="mb-3 d-block font-fifteen"
+                        ><i class="fas fa-map-marker-alt text-primary"></i> 2305
+                        Frog Lane Overlandpk</span
+                      >
+                      <ul class="d-flex quantity font-fifteen">
+                        <li title="Beds">
+                          <span><i class="fa-solid fa-bed"></i></span>7
+                        </li>
+                        <li title="Baths">
+                          <span><i class="fa-solid fa-shower"></i></span>5
+                        </li>
+                        <li title="Area">
+                          <span><i class="fa-solid fa-vector-square"></i></span
+                          >1200 Sqft
+                        </li>
+                        <li title="Gas">
+                          <span><i class="fa-solid fa-fire"></i></span>Yes
+                        </li>
+                      </ul>
+                      <span class="listing-price"
+                        >$1126200<small> </small
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="property-grid-2 property-block transation">
+                    <div
+                      class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                    >
+                      <div class="cata position-absolute">
+                        <span class="sale bg-secondary text-white"
+                          >For Rent</span
+                        >
+                      </div>
+                      <a href="property-details.html"
+                        ><img
+                          src="assets/images/property_grid/property-grid-7.png"
+                          alt="Image Not Found!"
+                      /></a>
+                      <ul class="position-absolute quick-meta">
+                        <li>
+                          <a href="#" title="Add Compare"
+                            ><i class="fa fa-camera mx-1"></i
+                            ><span style="font-size: 10px; font-weight: bold"
+                              >4</span
+                            ></a
+                          >
+                        </li>
+
+                        <li class="md-mx-none">
+                          <a
+                            class="quick-view"
+                            href="#quick-view"
+                            title="Quick View"
+                            ><i
+                              class="flaticon-zoom-increasing-symbol flat-mini"
+                            ></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="post-content py-3">
+                      <div
+                        class="post-meta font-small text-uppercase list-color-primary"
+                      >
+                        <a href="#" class="listing-ctg"
+                          ><i class="fa-solid fa-building"></i
+                          ><span>Appartment</span></a
+                        >
+                      </div>
+                      <h5>
+                        <a class="text-secondary" href="property-details.html"
+                          >New Developed Condos</a
+                        >
+                      </h5>
+                      <span class="mb-3 d-block font-fifteen"
+                        ><i class="fas fa-map-marker-alt text-primary"></i> 2305
+                        Frog Lane Overlandpk</span
+                      >
+                      <ul class="d-flex quantity font-fifteen">
+                        <li title="Beds">
+                          <span><i class="fa-solid fa-bed"></i></span>7
+                        </li>
+                        <li title="Baths">
+                          <span><i class="fa-solid fa-shower"></i></span>5
+                        </li>
+                        <li title="Area">
+                          <span><i class="fa-solid fa-vector-square"></i></span
+                          >1200 Sqft
+                        </li>
+                        <li title="Gas">
+                          <span><i class="fa-solid fa-fire"></i></span>Yes
+                        </li>
+                      </ul>
+                      <span class="listing-price">$21500<small> </small></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="property-grid-2 property-block transation">
+                    <div
+                      class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                    >
+                      <div class="cata position-absolute">
+                        <span class="sale bg-secondary text-white"
+                          >For Rent</span
+                        >
+                      </div>
+                      <a href="property-details.html"
+                        ><img
+                          src="assets/images/property_grid/property-grid-8.png"
+                          alt="Image Not Found!"
+                      /></a>
+                      <ul class="position-absolute quick-meta">
+                        <li>
+                          <a href="#" title="Add Compare"
+                            ><i class="fa fa-camera mx-1"></i
+                            ><span style="font-size: 10px; font-weight: bold"
+                              >4</span
+                            ></a
+                          >
+                        </li>
+
+                        <li class="md-mx-none">
+                          <a
+                            class="quick-view"
+                            href="#quick-view"
+                            title="Quick View"
+                            ><i
+                              class="flaticon-zoom-increasing-symbol flat-mini"
+                            ></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="post-content py-3">
+                      <div
+                        class="post-meta font-small text-uppercase list-color-primary"
+                      >
+                        <a href="#" class="listing-ctg"
+                          ><i class="fa-solid fa-building"></i
+                          ><span>Condos</span></a
+                        >
+                      </div>
+                      <h5>
+                        <a class="text-secondary" href="property-details.html"
+                          >Luxury Condos Infront of River</a
+                        >
+                      </h5>
+                      <span class="mb-3 d-block font-fifteen"
+                        ><i class="fas fa-map-marker-alt text-primary"></i> 2305
+                        Frog Lane Overlandpk</span
+                      >
+                      <ul class="d-flex quantity font-fifteen">
+                        <li title="Beds">
+                          <span><i class="fa-solid fa-bed"></i></span>7
+                        </li>
+                        <li title="Baths">
+                          <span><i class="fa-solid fa-shower"></i></span>5
+                        </li>
+                        <li title="Area">
+                          <span><i class="fa-solid fa-vector-square"></i></span
+                          >1200 Sqft
+                        </li>
+                        <li title="Gas">
+                          <span><i class="fa-solid fa-fire"></i></span>Yes
+                        </li>
+                      </ul>
+                      <span class="listing-price">$22700<small> </small></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="property-grid-2 property-block transation">
+                    <div
+                      class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom"
+                    >
+                      <div class="cata position-absolute">
+                        <span class="sale bg-secondary text-white"
+                          >For Sale</span
+                        >
+                      </div>
+                      <a href="property-details.html"
+                        ><img
+                          src="assets/images/property_grid/property-grid-5.png"
+                          alt="Image Not Found!"
+                      /></a>
+                      <ul class="position-absolute quick-meta">
+                        <li>
+                          <a href="#" title="Add Compare"
+                            ><i class="fa fa-camera mx-1"></i
+                            ><span style="font-size: 10px; font-weight: bold"
+                              >4</span
+                            ></a
+                          >
+                        </li>
+
+                        <li class="md-mx-none">
+                          <a
+                            class="quick-view"
+                            href="#quick-view"
+                            title="Quick View"
+                            ><i
+                              class="flaticon-zoom-increasing-symbol flat-mini"
+                            ></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="post-content py-3">
+                      <div
+                        class="post-meta font-small text-uppercase list-color-primary"
+                      >
+                        <a href="#" class="listing-ctg"
+                          ><i class="fa-solid fa-building"></i
+                          ><span>Villa</span></a
+                        >
+                      </div>
+
+                      <h5>
+                        <a class="text-secondary" href="property-details.html"
+                          >Gorgeous Villa Bay View</a
+                        >
+                      </h5>
+                      <span class="mb-3 d-block font-fifteen"
+                        ><i class="fas fa-map-marker-alt text-primary"></i> 2305
+                        Frog Lane Overlandpk</span
+                      >
+                      <ul class="d-flex quantity font-fifteen">
+                        <li title="Beds">
+                          <span><i class="fa-solid fa-bed"></i></span>7
+                        </li>
+                        <li title="Baths">
+                          <span><i class="fa-solid fa-shower"></i></span>5
+                        </li>
+                        <li title="Area">
+                          <span><i class="fa-solid fa-vector-square"></i></span
+                          >1200 Sqft
+                        </li>
+                        <li title="Gas">
+                          <span><i class="fa-solid fa-fire"></i></span>Yes
+                        </li>
+                      </ul>
+                      <span class="listing-price">$15000<small> </small></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--============== Featured Property End ==============-->
+
+      <!--============== Property Location Start ==============-->
+      <div class="full-row">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="text-secondary text-center mb-5">
+                <h2 class="text-secondary mx-auto mb-4">
+                  Find Properties in These Cities
+                </h2>
+                <span
+                  class="d-table w-50 w-sm-100 sub-title mx-auto text-center"
+                  >Mauris primis turpis Laoreet magna felis mi amet quam enim
+                  curae. Sodales semper tempor dictum faucibus habitasse.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 location-style-1">
+            <div class="col-md-6">
+              <div class="entry-wrapper hover-img-zoom position-relative h-100">
+                <div class="overflow-hidden transation thumbnail-img">
+                  <img
+                    src="assets/images/property/3.png"
+                    alt="real estate template"
+                  />
+                </div>
+                <div
+                  class="d-flex position-absolute align-items-center bottom-0 p-4 w-100"
+                >
+                  <h5 class="mb-0">
+                    <a
+                      class="btn btn-white font-700 rounded-pill text-nowrap"
+                      href="#"
+                      >Miami</a
+                    >
+                  </h5>
+                  <span class="d-table ms-4 fs-5 font-500 text-white"
+                    >482 Listing</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="entry-wrapper hover-img-zoom position-relative h-100">
+                <div class="overflow-hidden transation thumbnail-img">
+                  <img
+                    src="assets/images/property/4.png"
+                    alt="real estate template"
+                  />
+                </div>
+                <div
+                  class="d-flex position-absolute align-items-center bottom-0 p-4 w-100"
+                >
+                  <h5 class="transation">
+                    <a
+                      class="btn btn-white font-700 rounded-pill text-nowrap"
+                      href="#"
+                      >Los Angeles</a
+                    >
+                  </h5>
+                  <span class="d-table ms-4 fs-5 font-500 text-white"
+                    >357 Listing</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="entry-wrapper hover-img-zoom position-relative h-100">
+                <div class="overflow-hidden transation thumbnail-img">
+                  <img
+                    src="assets/images/property/7.png"
+                    alt="real estate template"
+                  />
+                </div>
+                <div
+                  class="d-flex position-absolute align-items-center bottom-0 p-4 w-100"
+                >
+                  <h5 class="mb-0">
+                    <a
+                      class="btn btn-white font-700 rounded-pill text-nowrap"
+                      href="#"
+                      >New Maxico</a
+                    >
+                  </h5>
+                  <span class="d-table ms-4 fs-5 font-500 text-white"
+                    >192 Listing</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="entry-wrapper hover-img-zoom position-relative h-100">
+                <div class="overflow-hidden transation thumbnail-img">
+                  <img
+                    src="assets/images/property/8.png"
+                    alt="real estate template"
+                  />
+                </div>
+                <div
+                  class="d-flex position-absolute align-items-center bottom-0 p-4 w-100"
+                >
+                  <h5 class="mb-0">
+                    <a
+                      class="btn btn-white font-700 rounded-pill text-nowrap"
+                      href="#"
+                      >Varginha</a
+                    >
+                  </h5>
+                  <span class="d-table ms-4 fs-5 font-500 text-white"
+                    >192 Listing</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="entry-wrapper hover-img-zoom position-relative h-100">
+                <div class="overflow-hidden transation thumbnail-img">
+                  <img
+                    src="assets/images/property/13.png"
+                    alt="real estate template"
+                  />
+                </div>
+                <div
+                  class="d-flex position-absolute align-items-center bottom-0 p-4 w-100"
+                >
+                  <h5 class="mb-0">
+                    <a
+                      class="btn btn-white font-700 rounded-pill text-nowrap"
+                      href="#"
+                      >Florida</a
+                    >
+                  </h5>
+                  <span class="d-table ms-4 fs-5 font-500 text-white"
+                    >192 Listing</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="entry-wrapper hover-img-zoom position-relative h-100">
+                <div class="overflow-hidden transation thumbnail-img">
+                  <img
+                    src="assets/images/property/18.png"
+                    alt="real estate template"
+                  />
+                </div>
+                <div
+                  class="d-flex position-absolute align-items-center bottom-0 p-4 w-100"
+                >
+                  <h5 class="mb-0">
+                    <a
+                      class="btn btn-white font-700 rounded-pill text-nowrap"
+                      href="#"
+                      >New York</a
+                    >
+                  </h5>
+                  <span class="d-table ms-4 fs-5 font-500 text-white"
+                    >812 Listing</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="entry-wrapper hover-img-zoom position-relative h-100">
+                <div class="overflow-hidden transation thumbnail-img">
+                  <img
+                    src="assets/images/property/15.png"
+                    alt="real estate template"
+                  />
+                </div>
+                <div
+                  class="d-flex position-absolute align-items-center bottom-0 p-4 w-100"
+                >
+                  <h5 class="mb-0">
+                    <a
+                      class="btn btn-white font-700 rounded-pill text-nowrap"
+                      href="#"
+                      >Lasvegas</a
+                    >
+                  </h5>
+                  <span class="d-table ms-4 fs-5 font-500 text-white"
+                    >256 Listing</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--============== Property Location End ==============-->
+
+      <!--============== Data Counting Start ==============-->
+      <div class="full-row p-0 bg-secondary">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="fact-counter pt-5 pb-4 rounded">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="mb-30 text-center count wow fadeIn animate"
+                      data-wow-duration="300ms"
+                      style="
+                        visibility: visible;
+                        animation-duration: 300ms;
+                        animation-name: fadeIn;
+                      "
+                    >
+                      <span
+                        class="count-num text-primary h2"
+                        data-speed="3000"
+                        data-stop="310"
+                        >3210</span
+                      >
+                      <h5 class="text-white font-400 pt-2">Listed Property</h5>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="mb-30 text-center count wow fadeIn animate"
+                      data-wow-duration="300ms"
+                      style="
+                        visibility: visible;
+                        animation-duration: 300ms;
+                        animation-name: fadeIn;
+                      "
+                    >
+                      <span
+                        class="count-num text-primary h2"
+                        data-speed="3000"
+                        data-stop="51"
+                        >51</span
+                      >
+                      <h5 class="text-white font-400 pt-2">Mega Project</h5>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="mb-30 text-center count wow fadeIn animate"
+                      data-wow-duration="300ms"
+                      style="
+                        visibility: visible;
+                        animation-duration: 300ms;
+                        animation-name: fadeIn;
+                      "
+                    >
+                      <span
+                        class="count-num text-primary h2"
+                        data-speed="3000"
+                        data-stop="25"
+                        >25</span
+                      >
+                      <h5 class="text-white font-400 pt-2">Awards Won</h5>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="mb-30 text-center count wow fadeIn animate"
+                      data-wow-duration="300ms"
+                      style="
+                        visibility: visible;
+                        animation-duration: 300ms;
+                        animation-name: fadeIn;
+                      "
+                    >
+                      <span
+                        class="count-num text-primary h2"
+                        data-speed="3000"
+                        data-stop="2130"
+                        >2130</span
+                      >
+                      <h5 class="text-white font-400 pt-2">Happy Clients</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--============== Data Counting End ==============-->
+
+      <!--============== Blog Section Start ==============-->
+      <div class="full-row bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <span
+                class="pb-2 d-table w-50 w-sm-100 text-primary m-auto text-center tagline"
+                >Our Recent Post</span
+              >
+              <h2 class="down-line w-50 w-sm-100 mx-auto text-center mb-5">
+                Publish What We Think, About Our Company Activities
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="thumb-blog-overlay bg-white hover-text-PushUpBottom mb-4"
+              >
+                <div class="post-image position-relative overlay-secondary">
+                  <img src="assets/images/blog/1.png" alt="Image not found!" />
+                  <div class="position-absolute xy-center">
+                    <div class="overflow-hidden text-center">
+                      <a
+                        class="text-white first-push-up transation font-large"
+                        href="blog-details.html"
+                        >+</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="post-content p-35">
+                  <h5 class="d-block font-400 mb-3">
+                    <a
+                      href="blog-details.html"
+                      class="transation text-dark hover-text-primary"
+                      >Our latest development projects by more efficie.</a
+                    >
+                  </h5>
+                  <p>
+                    Nostra maecenas malesuada vel lobortis sociis mus aliquam
+                    tempor etiam ipsum pretium cursus.
+                  </p>
+                  <div class="post-meta text-uppercase">
+                    <a href="#"><span>By Robert Haven</span></a>
+                    <a href="#"><span>Dec 25, 2025</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="thumb-blog-overlay bg-white hover-text-PushUpBottom mb-4"
+              >
+                <div class="post-image position-relative overlay-secondary">
+                  <img src="assets/images/blog/2.png" alt="Image not found!" />
+                  <div class="position-absolute xy-center">
+                    <div class="overflow-hidden text-center">
+                      <a
+                        class="text-white first-push-up transation font-large"
+                        href="blog-details.html"
+                        >+</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="post-content p-35">
+                  <h5 class="d-block font-400 mb-3">
+                    <a
+                      href="blog-details.html"
+                      class="transation text-dark hover-text-primary"
+                      >Cultivating market leadership from the inside.</a
+                    >
+                  </h5>
+                  <p>
+                    Nostra maecenas malesuada vel lobortis sociis mus aliquam
+                    tempor etiam ipsum pretium cursus.
+                  </p>
+                  <div class="post-meta text-uppercase">
+                    <a href="#"><span>By Robert Haven</span></a>
+                    <a href="#"><span>Dec 25, 2025</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="thumb-blog-overlay bg-white hover-text-PushUpBottom mb-4"
+              >
+                <div class="post-image position-relative overlay-secondary">
+                  <img src="assets/images/blog/3.png" alt="Image not found!" />
+                  <div class="position-absolute xy-center">
+                    <div class="overflow-hidden text-center">
+                      <a
+                        class="text-white first-push-up transation font-large"
+                        href="blog-details.html"
+                        >+</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="post-content p-35">
+                  <h5 class="d-block font-400 mb-3">
+                    <a
+                      href="blog-details.html"
+                      class="transation text-dark hover-text-primary"
+                      >We are the next generation of the advertising.</a
+                    >
+                  </h5>
+                  <p>
+                    Nostra maecenas malesuada vel lobortis sociis mus aliquam
+                    tempor etiam ipsum pretium cursus.
+                  </p>
+                  <div class="post-meta text-uppercase">
+                    <a href="#"><span>By Robert Haven</span></a>
+                    <a href="#"><span>Dec 25, 2025</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--============== Blog Section End ==============-->
+
+      <!--============== Register Section Start ==============-->
+      <div class="full-row bg-primary py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-8">
+              <h3 class="text-white xs-text-center my-20 font-400">
+                Are you looking for House or Customer of your Property?
+              </h3>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <a
+                href="#"
+                class="btn btn-white y-center position-relative d-table xs-mx-auto ms-auto"
+                ><i class="fa fa-phone"></i> +91 9090909090</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--============== Register Section End ==============-->
+
+      <!--============== Footer Section Start ==============-->
+      <footer
+        class="full-row footer-default-dark bg-footer"
+        style="padding-bottom: 30px"
+      >
+        <div class="container">
+          <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
+            <div class="col">
+              <div class="footer-widget mb-4">
+                <div class="footer-logo mb-4">
+                  <a href="#"
+                    ><img
+                      src="assets/images/logo/logo-full-white.png"
+                      alt="Image not found!"
+                      style="width: 50px"
+                  /></a>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  veritatis tempora nesciunt error numquam in laudantium tempore
+                  aspernatur ipsa totam.
+                </p>
+              </div>
+              <div class="footer-widget media-widget mb-4">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-widget contact-widget mb-4">
+                <h3 class="widget-title mb-4">Contact Info</h3>
+                <ul>
+                  <li>
+                    <i class="fa fa-location"></i> &nbsp; 8th floor, World Trade
+                    Centre, Dholepatil Farms Road, EON Free Zone, Kharadi, Pune,
+                    Maharashtra 411014.
+                  </li>
+                  <li><i class="fa fa-phone"></i>&nbsp; +91 9090909090</li>
+                  <li>
+                    <i class="fa fa-envelope"></i> &nbsp;helpline@atis.com
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-widget footer-nav mb-4">
+                <h3 class="widget-title mb-4">Quick Links</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="properties.html">Properties</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="faq.html">Frequenly Ask Question</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--============== Footer Section End ==============-->
+
+      <!--============== Copyright Section Start ==============-->
+      <div class="copyright bg-footer text-default py-4">
+        <div class="container">
+          <div class="row row-cols-md-2 row-cols-1">
+            <div class="col">
+              <span class="text-white">© 2025 All right reserved</span>
+            </div>
+            <div class="col">
+              <ul class="line-menu float-end list-color-gray">
+                <li><a href="privacy-policy.html">Privacy & Policy </a></li>
+                <li>|</li>
+                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--============== Copyright Section End ==============-->
+
+      <!-- Scroll to top -->
+      <div class="scroll-top-vertical xs-mx-none" id="scroll">
+        Go Top <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+      </div>
+      <!-- End Scroll To top -->
+
+      <!--============== Modal Start ==============-->
+      <div class="overlay-dark modal fade quick-view-modal" id="quick-view">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="close view-close">
+              <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body property-block summary p-3">
+              <div class="row row-cols-xl-2 row-cols-1">
+                <div class="col">
+                  <div
+                    class="overflow-hidden position-relative transation thumbnail-img bg-secondary hover-img-zoom m-2"
+                  >
+                    <div class="cata position-absolute">
+                      <span class="sale bg-secondary text-white">For Rent</span>
+                      <span class="featured bg-primary text-white"
+                        >Featured</span
+                      >
+                    </div>
+                    <a href="#"
+                      ><img
+                        class="w-100"
+                        src="assets/images/property/2.png"
+                        alt=""
+                    /></a>
+                    <ul class="position-absolute quick-meta">
+                      <li>
+                        <a href="#"
+                          ><i class="flaticon-transfer flat-mini"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="flaticon-like-1 flat-mini"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="flaticon-share flat-mini"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="flaticon-printer flat-mini"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="property_text transation py-3 pe-3">
+                    <span class="d-inline-block text-primary">Condos</span>
+                    <h5 class="modal-title mb-1" id="staticBackdropLabel">
+                      <a
+                        href="#"
+                        class="text-secondary hover-text-primary transation"
+                        >Luxury Condos Infront of the street of Green Park</a
+                      >
+                    </h5>
+                    <span class="mt-1 mb-3 d-block font-fifteen"
+                      ><i class="fas fa-map-marker-alt text-primary"></i> 2305
+                      Tree Frog Lane Overlandpk, MO 66210</span
+                    >
+                    <a
+                      href="#"
+                      class="d-block text-light hover-text-primary font-small mb-2"
+                      >( 100 People Recommended )</a
+                    >
+                    <div class="d-flex">
+                      <span class="text-secondary font-large"
+                        >$5600 - $8300/<small>mo</small></span
+                      >
+                      <span
+                        class="text-white font-mini px-2 rounded product-status ms-5 my-1 bg-primary"
+                        ><i class="fas fa-check"></i> Available</span
+                      >
+                    </div>
+                    <div class="product-offers mt-3">
+                      <ul class="product-offers-list">
+                        <li class="product-offer-item">
+                          <strong>Special Price </strong>Get extra 19% off
+                          (price inclusive of discount)
+                        </li>
+                        <li class="product-offer-item">
+                          <strong>Bank Offer </strong> 10% instant discount on
+                          VISA Cards
+                        </li>
+                        <li class="product-offer-item">
+                          <strong>No cost EMI $49/month.</strong> Standard EMI
+                          also available
+                        </li>
+                      </ul>
+                    </div>
+                    <hr />
+                    <div class="quantity">
+                      <ul class="d-flex">
+                        <li><span>Rooms:</span> 5</li>
+                        <li><span>Beds:</span> 3</li>
+                        <li><span>Bathrooms:</span> 2</li>
+                        <li><span>Garage:</span> 1</li>
+                        <li><span>Area:</span> 1100 Sqft</li>
+                      </ul>
+                    </div>
+                    <h5 class="text-secondary my-3">Description</h5>
+                    <p>
+                      Bibendum purus aenean mus aenean eu interdum nonummy ipsum
+                      ad consequat. Dui eros donec faucibus convallis tempus
+                      rutrum id donec mus hymenaeos placerat congue curae mauris
+                      turpis gravida viverra consequat consequat gravida luctus.
+                    </p>
+                    <div class="short-description d-flex">
+                      <span class="me-4"><b>Highlights:</b></span>
+                      <div class="short-description">
+                        <ul class="list-style-tick">
+                          <li>Regular Fit.</li>
+                          <li>Full sleeves.</li>
+                          <li>Machine wash, tumble dry.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center post-meta mt-2 py-3 border-top"
+                    >
+                      <div class="agent">
+                        <a
+                          href="#"
+                          class="d-flex text-general align-items-center"
+                          ><img
+                            class="rounded-circle me-2"
+                            src="assets/images/team/1.jpg"
+                            alt="avata"
+                          /><span>Ali Tufan</span></a
+                        >
+                      </div>
+                      <div class="post-date ms-auto">
+                        <span>2 Month Ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--============== Modal End ==============-->
+    </div>
+
+    <!-- Javascript Files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/range/tmpl.js"></script>
+    <script src="assets/js/range/jquery.dependClass.js"></script>
+    <script src="assets/js/range/draggable.js"></script>
+    <script src="assets/js/range/jquery.slider.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/paraxify.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
